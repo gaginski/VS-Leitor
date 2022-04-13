@@ -3,7 +3,7 @@ import 'package:get/get.dart';
 import 'package:teste/src/controller/home_page_controller.dart';
 import 'package:teste/constants.dart';
 
-import 'src/controller/rest_controller.dart';
+import '../controller/rest_controller.dart';
 //HOME PAGE DO APP
 
 class HomePage extends StatelessWidget {

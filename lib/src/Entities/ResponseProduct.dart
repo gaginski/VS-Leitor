@@ -8,7 +8,7 @@ class ResponseProduct {
 
   ResponseProduct.fromJson(Map<String, dynamic> json) {
     api = json['api'] != null ? Api.fromJson(json['api']) : null;
-   // product = json['return'] != null ? Product.fromJson(json['return']) : null;
+    product = json['return'] != null ? Product.fromJson(json['return']) : null;
   }
 }
 

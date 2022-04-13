@@ -3,13 +3,15 @@ import 'package:floor/floor.dart';
 import '../Base/EntityBase.dart';
 
 @entity
-class Product extends EntityBase {
-  Product(sequence, createdData, updateDate, this.id, this.nome/*, this.descricao, this.gtin, this.ean, this.imagemProduto, this.preco, this.precoMedio, this.precoMaximo, this.precoMinimo, this.largura, this.altura, this.comprimento, this.pesoLiquido, this.pesoBruto, this.imagemCodigoBarras, this.marcaNome, this.imagemMarca, this.gpcCodigo, this.gpcDescricao, this.tipoEmbalagem, this.quantidadeEmbalagem, this.ncmCodigo, this.ncmDescricao, this.cestCodigo, this.cestDescricao, this.fabricanteNome, this.baseOrigem, this.dataCriacao, this.dataAtualizacao}*/) :
-        super(sequence, createdData, updateDate);
+class Product {
+  Product({this.sequence, this.id, this.nome, this.descricao, this.gtin, this.ean, this.imagemProduto, this.preco, this.precoMedio, this.precoMaximo, this.precoMinimo, this.largura, this.altura, this.comprimento, this.pesoLiquido, this.pesoBruto, this.imagemCodigoBarras, this.marcaNome, this.imagemMarca, this.gpcCodigo, this.gpcDescricao, this.tipoEmbalagem, this.quantidadeEmbalagem, this.ncmCodigo, this.ncmDescricao, this.cestCodigo, this.cestDescricao, this.fabricanteNome, this.baseOrigem, this.dataCriacao, this.dataAtualizacao});
 
-  String id;
-  String nome;
-  /*String? descricao;
+
+  @PrimaryKey(autoGenerate: true)
+  int? sequence;
+  int? id;
+  String? nome;
+  String? descricao;
   String? gtin;
   String? ean;
   String? imagemProduto;
@@ -36,14 +38,12 @@ class Product extends EntityBase {
   String? fabricanteNome;
   String? baseOrigem;
   String? dataCriacao;
-  String? dataAtualizacao;*/
+  String? dataAtualizacao;
 
-
-
- /* Product.fromJson(Map<String, dynamic> json) : super(0,DateTime.now().toString(), DateTime.now().toString() ){
+  Product.fromJson(Map<String, dynamic> json){
     id = json['id'];
     nome = json['nome'];
-    /*descricao = json['descricao'];
+    descricao = json['descricao'];
     gtin = json['gtin'];
     ean = json['ean'];
     imagemProduto = json['imagem_produto'];
@@ -70,6 +70,6 @@ class Product extends EntityBase {
     fabricanteNome = json['fabricante_nome'];
     baseOrigem = json['base_origem'];
     dataCriacao = json['data_criacao'];
-    dataAtualizacao = json['data_atualizacao'];*/
-  }*/
+    dataAtualizacao = json['data_atualizacao'];
+  }
 }

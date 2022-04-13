@@ -34,6 +34,7 @@ dependencies:
   rxdart:
   dio: ^4.0.6
   floor: ^1.2.0
+  sqflite:
 
 
   # The following adds the Cupertino Icons font to your application.

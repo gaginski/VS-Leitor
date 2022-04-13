@@ -1,7 +1,7 @@
 import 'package:teste/src/controller/rest_controller.dart';
 import 'package:teste/src/Entities/Product.dart';
 
-import '../Entities/Config.dart';
+import '../Utils/Config.dart';
 import '../Entities/ResponseProduct.dart';
 class ProductController{
 
